@@ -1,171 +1,163 @@
-//dat bien mau
-
-// $line-color: red;
-
-// #test{
-    // margin: 100px;
-    // cursor: pointer;
-    // padding: 15px 0px;
-    // background: lightgray;
-    // display: inline-block;
-    // .line{
-    //     width: 100px;
-    //     height: 10px;
-    //     background: $line-color;
-    //     position: relative;
-        
-
-    //     &:before{
-    //         position: absolute;
-    //         content: " ";
-    //         width: 100%;
-    //         height: 100%;
-    //         top:-20px;
-    //         left: 0;
-    //         background: $line-color;
-    //     }
-    //     &:after{
-    //         position: absolute;
-    //         content: " ";
-    //         width: 100%;
-    //         height: 100%;
-    //         top:20px;
-    //         left: 0;
-    //         background: $line-color;
-    //     }
-    // }
-
-
-    //////////
-    // display: flex;
-    // flex-wrap: wrap;
-    // .item{
-    //     margin: 5px;
-    //     width: 300px;
-    //     //flex-basis: 500px; //= width, duoc uu tien hown witdth
-    //     img{
-    //         width: 100%;
-    //     }
-    // }
-    ///////////
-
-    // }
-    //////////////////////////////////////
-// .slider{
-//     position: relative;
-//     .muiten{
-        
-//     .next{
-        
-//         img{
-//             position: absolute;  
-//             top: 50%;
-//             right: 0;
-//             transform: translateY(-50%);
-//             z-index: 99;
-//             padding: 20px;
-//             border-radius: 50%;
-//         }
-//     }
-//     .prev{
-//         position: absolute;    
-//         top: 50%;
-//        left: 0;
-//         transform: translateY(-50%);
-//         z-index: 99;
-//         padding: 20px;
-//         border-radius: 50%;
-//     }
-// }
-// }
-
-/////////////////////////////////////////
-
-// .slider{
-//     position: relative;
-//     .owl-prev{
-//         position: absolute;
-//         left: 20px;
-//         top: 45%;
-//     }
-//     .owl-next{
-//         position: absolute;
-//         right: 20px;
-//         top: 45%;
-//     }
-// }
-// .container{    
-//    display: flex;
-//    justify-content: center;
-//    align-items: center;
-//    width: 100vh;
-
-//    > ul{
-//        > li{
-//            position: relative;
-//            > .dropdown{
-//             display: none;
-//             position: absolute;
-//             left: 0;
-//            }
-//        }
-//    }
-//    ul{
-//     font-size: 30px;
-//        li{
-//             span{
-//                 padding-left: 20px;
-//                 display: inline-block;
-//                transition: all 0.5s ease-in;
-
-//             }
-//        }
-//        .dropdown{
-//        }
-//    }
-//    .rotate{
-//        transform: rotate(90deg);
-//    }
-// //    .rotate90{
-// //     transform: rotate(-90deg);
-// // }
-   
-// }
-
 // Ctrl D: thay 1 luot nhung cai cung nhau
 // $main-color: #2ecc71;
 // $Register-form: #f6e58d;
 // $Login-color: #2ecc71;
 
+.navbar{
+    margin: 100px;
+    ul{
+        li{
+            margin: 20px;
+            padding: 20px;
+            background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); 
+            display: inline-block;
+            a{
+                font: 30px;
+            }
+            
+        }
+        
+    }
+}
 
-.Register-form{
-    --color: #f6e58d;
-}
 .Login-form{
-    --color: #2ecc71;
+    --color:#7f8c8d;
+    form{
+        position: relative;
+        .icon-login{
+            position: absolute;
+            content: " ";
+            top: -50px;
+            left: 40%;
+            border-radius: 50%;
+            background-color:#52cffe;
+            color: white;
+            i{
+                font-size: 100px;
+                padding: 10px;
+            }
+        }
+        .icon-exit{
+            position: absolute;
+            content: " ";
+            top: 10px;
+            right: 10px;
+        }
+        h2{
+            margin: 50px 0 20px 0;
+            font-size: 25px;
+            color: #7f8c8d;
+        }
+        button{
+            background-color: #52cffe;
+            margin-bottom: 30px !important;
+        }
+        .footer{
+            position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                
+            p{  
+                       
+                color: var(--color);
+                background: #ecf0f1;
+                width: 500px;
+                left: 0;
+                padding: 20px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+        }
+        
+    }
+    
+
 }
 .Register-form{
+    text-align: center;
+    --color: white;
+    background-image: linear-gradient(to right bottom, #e73321, #f73a7b, #e069c4, #ae94f0, #7fb3fa, #58c5fd, #44d4f6, #58e1e6, #4fedd3, #72f7b2, #a5fc89, #e0fb5f);
     .gender{
         text-align: left;
     }
+    h2{
+        padding-bottom: 20px;
+        color: var(--color);
+    }
+    form{
+        background:rgba(0,0,0,0.2) !important;
+        .btn{
+            display: flex;
+            justify-content: space-around;
+           
+            
+        }
+        button{
+            padding: 10px 20px !important;
+            font-size: 15px !important;
+            border: none;
+            
+        }
+        .inPut{
+            position: relative;
+            input{
+                width: 100%;
+            }
+            i{
+                position: absolute;
+                content: '';
+                right: 10px;
+                top: 20px;
+                color: white;
+            }
+        }
+        
+        :first-child{
+            button{
+                background: #27ae60;
+            }
+        }
+        :nth-child(2){
+            button{
+                background: red;
+            }
+        }
+        .re{
+            background: #27ae60;
+            button{
+                padding: 10px 20px !important;
+                font-size: 15px !important;
+                border: none;
+            }
+        }
+    }
+}
+form.Register-form.min{
+    height: 350px !important;
 }
 .form{
     height: 100vh;
+    // width: 50vw;
+    // margin: auto;
     display: flex;
     justify-content: space-around;
-    align-items: center;   
+    // align-items: center;   
     background-color: var(--color);
+    
         form{
+            margin-top: 100px;
             width: 500px;
+            height: 500px;
             padding: 50px;
             background: white;
             display: flex;
             flex-direction: column;
             text-align: center;
-           
+            border-radius: 5px;
             button{
                 color: white;
-                background-color: var(--color);
+                // background-color: var(--color);
                 padding: 14px 0;
                 font-size: 24px;
                 margin-bottom: 14px;
@@ -174,19 +166,16 @@
             input{
                 padding: 15px 14px;
                 font-size: 18px;
-                background-color: rgba($color: #666, $alpha: 0.3);
-                margin-bottom: 14px;
+                // background-color: rgba($color: #666, $alpha: 0.3);
+                border: 1px solid var(--color);
+                border-radius: 5px;
+                margin-bottom: 20px;
                 &::-webkit-input-placeholder{    // css kai cho input
-                    color: lightcyan;
-                    font-size: 18px;
+                    color: var(--color);
+                    font-size: 15px;
                 }
             }
-            p{
-                a{
-                    color: #2ecc71;
-                }
-            }
-
+           
             &.Register-form{
                 .gender{
                     text-align: left;

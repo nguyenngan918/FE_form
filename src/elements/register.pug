@@ -7,24 +7,45 @@ html(lang="en")
         link(rel="stylesheet", href="css/owl.carousel.min.css")
         link(rel="stylesheet", href="css/owl.theme.default.min.css")
         link(rel="stylesheet", href="../css/reset.css")
-        link(rel="stylesheet", href="../css/style.css") 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+        link(rel="stylesheet", href="../css/style.css")
+        //- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">        
         title Template
     body
         .form.Register-form
+            form.Register-form.min
+                h2 Sign In Form
+                input(type="text", placeholder="USERNAME")
+                input(type="text",placeholder="PASS")
+                //- .gender
+                //-     label(for="") Male
+                //-         input(type="radio", name= "gender", checked="checked")
+                //-     label(for="") Female
+                //-         input(type="radio",name= "gender")
+                ul.btn
+                    li
+                        button REGISTER
+                    li
+                        button REGISTER          
             form.Register-form
-                input(type="text", placeholder="username")
-                input(type="text",placeholder="password")
-                input(type="text",placeholder="Re-password")
-                .gender
-                    label(for="") Male
-                        input(type="radio", name= "gender", checked="checked")
-                    label(for="") Female
-                        input(type="radio",name= "gender")
-                button REGISTER
-                p Here An Acount? 
-                    a(href="register.html") Login Now
-
+                h2 Sign Up Form
+                .inPut
+                    input(type="text", placeholder="USERNAME")
+                    <i class="fa fa-user"></i>
+                
+                .inPut
+                    input(type="text", placeholder="PHONE")
+                    <i class="fa fa-tty"></i>
+                
+                .inPut
+                    input(type="text", placeholder="EMAIL ADDRESS")
+                    <i class="fa fa-envelope-open"></i>
+                
+                .inPut
+                    input(type="text",placeholder="PASS")
+                    <i class="fa fa-lock"></i>
+                
+                button.re REGISTER
     block scripts
         include scripts.pug
     //- type = raido chon 1 trong 2
