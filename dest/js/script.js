@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".container > ul > li > a").click(function(t){t.preventDefault(),$(this).siblings(".dropdown").slideToggle(),$(this).find(".iconRotate").hasClass("rotate")?$(this).find(".iconRotate").removeClass("rotate"):$(this).find(".iconRotate").addClass("rotate")})});
